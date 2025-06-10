@@ -1,0 +1,362 @@
+:root {
+    --primary-dark: #128a24;
+    --primary: #2ba431;
+    --primary-light: #acfd9b;
+    --accent: #3bb719;
+    --text-light: #ffffff;
+    --text-dark: #254127;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --nav-inactive: #cecece;
+    --card-bg: #0b8411;
+    --card-hover: #28a92f;
+    --select-bg: #a8ff90;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-dark);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-light);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 12px var(--shadow);
+    gap: 20px;
+}
+
+.landn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.poto1 {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.poto1:hover {
+    transform: scale(1.05);
+}
+
+.EgUname h1 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-bottom: 5px;
+}
+
+.EgUname p {
+    font-size: 1rem;
+    color: var(--primary-light);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+nav a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.a1 {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.a1:hover {
+    color: var(--primary-light);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.a2 {
+    color: var(--nav-inactive);
+    text-decoration: none;
+    cursor: default;
+}
+
+button {
+    padding: 12px 24px;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px var(--shadow);
+    background-color: var(--accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #30a012;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--shadow);
+}
+
+main {
+    background-color: var(--primary-light);
+    color: var(--text-dark);
+    padding: 30px;
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+main form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+main select {
+    background-color: var(--select-bg);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 5px var(--shadow);
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+main select:hover {
+    background-color: #92ff74;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+main form button {
+    padding: 10px;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+}
+
+main form button img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+main form button:hover img {
+    transform: scale(1.1);
+}
+
+.inti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Tdata {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data0 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.data0 button {
+    padding: 5px;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.data0 button img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.data0 button:hover img {
+    transform: scale(1.1);
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.data:hover {
+    background-color: var(--card-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.data p {
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 1rem;
+}
+
+.data p a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.inti button {
+    margin: 20px 0;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-dark);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-light);
+    border-radius: 0 0 10px 10px;
+    gap: 20px;
+    box-shadow: 0 -4px 12px var(--shadow);
+}
+
+footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.poto2 {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.poto2:hover {
+    transform: scale(1.05);
+}
+
+.NamaYW {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.NamaYW p {
+    font-weight: 500;
+}
+
+.yt, .ig {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.yt:hover, .ig:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .landn {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav {
+        margin: 15px 0;
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .data {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .poto2 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .EgUname h1 {
+        font-size: 1.5rem;
+    }
+    
+    main form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    main select {
+        width: 100%;
+    }
+    
+    .data p {
+        font-size: 0.9rem;
+    }
+    
+    .inti button {
+        width: 100%;
+    }
+}
