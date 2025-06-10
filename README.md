@@ -5,7 +5,7 @@ _Perhatian!!_
 ##
 
 <div align="center">
-    <img  src="web/images/1easy.png" width="300" alt="Coguide Logo" style="border-radius: 200px;">
+    <img  src="web/images/1easy.png" alt="Coguide Logo" width="300" height="300" style="border-radius: 50%; object-fit: cover;">
 
 # Easy Green 🌱
 
