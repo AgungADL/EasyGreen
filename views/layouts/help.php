@@ -25,6 +25,7 @@ use yii\helpers\Html;
             <ul>
                 <li data-view="getting-started">Getting Started</li>
                 <li class="parent" data-view="about-account">About Your Account
+                    <span class="arrow"></span>
                     <ul class="dropdown">
                         <li data-view="register">Register</li>
                         <li data-view="login">Login</li>
@@ -32,6 +33,7 @@ use yii\helpers\Html;
                     </ul>
                 </li>
                 <li class="parent" data-view="managing-plants">Managing Plants
+                    <span class="arrow"></span>
                     <ul class="dropdown">
                         <li data-view="create-plant">Add Plants</li>
                         <li data-view="search-category">Search by Category</li>
@@ -41,6 +43,7 @@ use yii\helpers\Html;
                     </ul>
                 </li>
                 <li class="parent" data-view="managing-harvest">Manage the Harvest
+                    <span class="arrow"></span>
                     <ul class="dropdown">
                         <li data-view="increase-harvest">Increase the harvest</li>
                         <li data-view="update-harvest">Update the Harvest</li>

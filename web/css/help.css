@@ -186,6 +186,26 @@ body {
     opacity: 1;
 }
 
+.sidebar .parent {
+    position: relative;
+}
+
+.sidebar .parent .arrow {
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    transform: translateY(-50%) rotate(-45deg);
+    border: solid var(--text-light);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar .parent.open .arrow {
+    transform: translateY(-50%) rotate(45deg);
+}
+
 .dropdown li:hover {
     color: var(--primary-light);
 }

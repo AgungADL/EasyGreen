@@ -66,6 +66,10 @@ Alasan kami membuat website ini karena adanya kesulian dalam mengelola tanaman. 
 
 ## ⚙️ Configuration
 
+pilih salah satu :
+
+**+ Menggunakan file sql**
+
 1. Buat database baru di mysql phpmyadmin dengan nama:
    ```bash
    easygreen
@@ -79,6 +83,24 @@ Alasan kami membuat website ini karena adanya kesulian dalam mengelola tanaman. 
    ```bash
    'dsn' => 'mysql:host=localhost;dbname=easygreen',
    ```
+
+**+ Menggunakan migration**
+
+1. Buat database baru di mysql phpmyadmin dengan nama:
+   ```bash
+   easygreen
+   ```
+2. Pergi ke file config/db.php lalu ganti bagian ini:
+   ```bash
+   'dsn' => 'mysql:host=localhost;dbname=yiibasic',
+   ```
+   Menjadi seperti ini :
+   ```bash
+   'dsn' => 'mysql:host=localhost;dbname=easygreen',
+   ```
+3. Lalu jalankan ini di terminal :
+   ```bash
+   php yii migrate
 
 ## 🚀 Usage
 
